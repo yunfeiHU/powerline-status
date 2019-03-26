@@ -42,4 +42,23 @@ command in your terminal
  ```bash
     $bash pip show powerline-status
  ```
+
+### Config Vim
+```bash
+   set rtp+=/usr/local/lib/python3.6/dist-packages/powerline/bindings/vim/
+   " Always show statusline
+   set laststatus=2
+   " Use 256 colours (Use this setting only if your terminal supports 256 colours)
+   set t_Co=256
+```
+
+### Config bash
+```bash
+   POWERLINE_SCRIPT=/usr/local/lib/python3.6/dist-packages/powerline/bindings/bash/powerline.sh
+   if [ -f $POWERLINE_SCRIPT ]; then
+   source $POWERLINE_SCRIPT
+   fi
+```
+   
+   
  
