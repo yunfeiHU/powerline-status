@@ -1,4 +1,4 @@
-## First. Check whether you hava Python and Pip installed
+## First. Check whether you have Python and Pip installed
 
 * Check if you have [python](https://www.python.org/) install on your computer by running this
 command in your terminal
