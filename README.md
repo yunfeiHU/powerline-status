@@ -25,6 +25,7 @@ command in your terminal
 ```bash
    $ bash curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 ```
+
 * Then run this command
 
 ```bash
@@ -37,13 +38,25 @@ command in your terminal
 ``` bash
     $bash pip install powerline-status
 ```
-* Type this command to see if it has been successfully installed
+
+* Type this command to see if it has been successfully installed (Remember where it is located)
 
  ```bash
     $bash pip show powerline-status
  ```
 
+### Config bash
+
+```bash
+   POWERLINE_SCRIPT=/usr/local/lib/python3.6/dist-packages/powerline/bindings/bash/powerline.sh
+   if [ -f $POWERLINE_SCRIPT ]; then
+   source $POWERLINE_SCRIPT
+   fi
+```
+
+
 ### Config Vim
+
 ```bash
    set rtp+=/usr/local/lib/python3.6/dist-packages/powerline/bindings/vim/
    " Always show statusline
@@ -52,13 +65,7 @@ command in your terminal
    set t_Co=256
 ```
 
-### Config bash
-```bash
-   POWERLINE_SCRIPT=/usr/local/lib/python3.6/dist-packages/powerline/bindings/bash/powerline.sh
-   if [ -f $POWERLINE_SCRIPT ]; then
-   source $POWERLINE_SCRIPT
-   fi
-```
+
    
    
  
